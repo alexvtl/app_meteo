@@ -22,7 +22,6 @@ width: 100%;
  padding: 0%;
  display: flex;
  flex-direction: column;
- justify-content: center;
  position: fixed;
 }
 
@@ -31,7 +30,7 @@ width: 100%;
   width: 100px;
   margin: 20px auto 30px;
   font-size: 40px;
-  background-color: rgba(255, 255, 255, 0.557) ;
+  background-color: rgba(255, 255, 255, 0.236) ;
   border-radius: 10px;
   }
 
@@ -39,9 +38,9 @@ width: 100%;
     margin-top: 30px;
     width:100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;  
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;  
 }
 
 #lieu::placeholder{
@@ -52,27 +51,27 @@ width: 100%;
     width: 60%;
     height: 50px;
     background-color:rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     font-size: 30px;
     border: 0;
     outline: none;
     margin: 0%;
-    padding: 0
+    padding: 0;
+    box-shadow:1px 2px 8px black; 
 }
 
 #button{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     background-color:rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0;
-    margin-left: 10px;
+    margin-left:10px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #button:hover{
@@ -92,7 +91,7 @@ width: 100%;
     text-align: center;
     width: 60%;
     height: 250px;
-    margin: 50px auto;
+    margin: 50px auto 0px;
     border-radius: 20px;
     padding: 0;
     display: flex;
@@ -118,19 +117,21 @@ width: 100%;
 
 #icon_temp{
         position: absolute;
-        background-color:transparent ;
+        background-color:transparent;
         border-radius: 50%;
         animation: effeticon infinite 7s linear;
         animation-direction: alternate;
 }
+
 @keyframes effeticon{
 0%{transform: translate(-70px,-60px)}
 100%{transform: translate(70px,-60px)}
 }
+
 #état{
     width: 60%;
     font-size: 40px;
-    height: 40px;
+    height: 50px;
     margin: 0px auto;
     border-radius: 20px;
     padding: 0;
