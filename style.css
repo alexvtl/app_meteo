@@ -49,15 +49,15 @@ width: 100%;
 
 #lieu{
     width: 60%;
-    height: 50px;
+    height: 40px;
     background-color:rgba(255, 255, 255, 0.3);
     border-radius: 10px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     border: 0;
     outline: none;
     margin: 0%;
-    padding: 0;
+    padding: 5px 10px;
     box-shadow:1px 2px 8px black; 
 }
 
