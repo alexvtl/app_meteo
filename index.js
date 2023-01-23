@@ -45,13 +45,15 @@ const lieu = document.getElementById('lieu').value;
         
         document.getElementById('time').innerHTML= timecity.getHours()+":"+timecity.getMinutes()
     
-
-
         
-
-        console.log(ID)
         if(data.main.temp<2){
-            document.getElementById('fond').src="https://rare-gallery.com/uploads/posts/2001854-aurora-borealis-trees-snow-finland.jpg"
+            if(lieu==="paris" || lieu ==='Paris'){
+                document.getElementById('fond').src="https://rare-gallery.com/uploads/posts/5314806-architecture-building-france-paris-pyramid-triangle-the-louvre-museum-snow-person-human-urban-city-downtown-town-metropolis-outdoors-white-louvre-museum-winter-free-images.jpg"
+                document.getElementById('data').style.color="black"
+                document.getElementById('temp').style.color="black"
+                document.getElementById('état').style.color="black"
+            }else{
+            document.getElementById('fond').src="https://rare-gallery.com/uploads/posts/2001854-aurora-borealis-trees-snow-finland.jpg"}
         }
         if(data.main.temp>2&&data.main.temp<15){
             document.getElementById('fond').src="https://rare-gallery.com/uploads/posts/1102241-city-street-cityscape-night-reflection-rain-umbrella-skyline-skyscraper-evening-tower-city-lights-metropolis-Shanghai-downtown-darkness-urban-area-metropolitan-area-hum.jpg"
